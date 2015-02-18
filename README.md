@@ -1,6 +1,6 @@
 # cleaningdata_courseproject
 
-run_analysis.R
+Function: run_analysis.R
 
 Consists of code separated into 5 bullets matching the 5 bullets of the assignment.
 
@@ -33,6 +33,16 @@ BULLET 5: From the data set in step 4, creates a second, independent tidy data s
 1. Created factors for Activity Name (walking, etc) and Person (subject) ID.
 2. Used the aggregate function to 'group by' (DBA terms) by Activity Name and Person ID and provide the mean for each unique combination of those 2 factors.
 3. Exported tidy data set.  30 subjects, 6 activities = 180 rows (means), 81 (columns)  (79 were std and mean variables, 2 were groupings)
+
+END RESULTS:
+tidydataset.txt
+VARIABLES within that output:
+ActivityName: From the activity_labels.txt file.  It's engineering goo that I don't have the first clue what it means other than it needed to be 
+joined to the main data set to decode the meaningless codes (1, 2, 3) into something that means something to someone. 
+Person ID: Somewhere in my reading of the inputs, I interpreted 'Subject' in the inputs to represent a 'Person'.  Whether that's true or not I don't know, but Person = Subject.
+The remaining variables are best defined by the input descriptions and have not been changed by name.  The difference here is the outputs are the means of the observations grouped by Activity and Subject/Person.
+
+
 
  
 
